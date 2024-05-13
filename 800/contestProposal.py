@@ -1,8 +1,8 @@
 # Contest Proposal
 for _ in range(int(input())):
-    t = list(map(int, input().split()))
-    a = int(input())
-    b = int(input())
+    t = int(input())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
 
     # a = sorted([4, 5, 6, 7, 8, 9])
     # b = sorted([1, 2, 3, 4, 5, 6])

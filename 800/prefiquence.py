@@ -1,4 +1,4 @@
-# Too Min Too Max
+# Prefiquence
 for _ in range(int(input())):
     t = list(map(int, input().split()))
     m = input()

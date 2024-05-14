@@ -1,12 +1,11 @@
-n = 2 * 2
-array = sorted([1, 1, 2, 1])
+for _ in range(int(input())):
+    n = 2 * int(input())
+    array = sorted(list(map(int, input().split())))
 
-result = 0
+    result = 0
 
-for i in range(n):
-    prevIndex = i
-    i = i + 1
-    if array[prevIndex] <= array[i]:
-        result += array[prevIndex]
+    for i in range(n):
+        if (i) % 2 == 0:
+            result += array[i]
 
-print(result)
+    print(result)

@@ -2,21 +2,18 @@ for _ in range(int(input())):
     n = int(input())
     array = sorted(list(map(int, input().split())))
 
-    poligone = 0
+    count = 0
     result = 0
-    base = 0
-    prev = 0
+    prev = array[0]
 
     for i in range(n):
-        if base == array[i]:
-            poligone += 1
+        if prev == array[i]:
+            count += 1
         else:
-            poligone = 0
-
-        if poligone > 2 and base != prev:
-            result += 1
+            result += count // 3
+            count = 1
             prev = array[i]
 
-        base = array[i]
+    result += count // 3
 
     print(result)
